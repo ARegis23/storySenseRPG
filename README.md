@@ -4,15 +4,21 @@ Protótipo web navegável de uma aplicação com IA para auxiliar mestres de RPG
 
 ## Objetivo
 
-O projeto demonstra como uma aplicação poderia apoiar o mestre em uma mesa de RPG, simulando um fluxo com:
+Demonstrar, de forma visual e navegável, como uma aplicação poderia:
 
-- criação da mesa;
-- aceite de consentimento dos jogadores;
-- observação visual da socialização inicial;
-- painel com perfis narrativos sugeridos;
-- geração de campanha, NPCs, cenas e desafios.
+- cadastrar uma mesa de RPG;
+- solicitar consentimento dos jogadores;
+- simular uma etapa de observação da mesa;
+- gerar perfis narrativos dos participantes;
+- sugerir uma campanha personalizada para o mestre.
 
-> Esta versão não possui backend, autenticação, banco de dados ou captura real de áudio e vídeo. O objetivo é demonstrar telas, fluxo, requisitos e experiência visual para apresentação acadêmica e portfólio.
+## Tecnologias usadas
+
+- HTML5
+- CSS3
+- JavaScript puro
+
+Não há backend, banco de dados, login real, câmera real ou microfone real. Tudo é uma simulação visual para fins acadêmicos e de portfólio.
 
 ## Telas do protótipo
 
@@ -26,50 +32,16 @@ O projeto demonstra como uma aplicação poderia apoiar o mestre em uma mesa de 
 8. Painel do mestre
 9. Campanha gerada
 
-## Tecnologias
+## Como executar
 
-- React
-- Vite
-- CSS puro
-- Lucide React
+Basta abrir o arquivo `index.html` no navegador.
 
-## Como rodar no VS Code
+Também é possível usar a extensão Live Server no VS Code:
 
-Instale as dependências:
-
-```bash
-npm install
-```
-
-Rode o projeto:
-
-```bash
-npm run dev
-```
-
-Abra o link mostrado no terminal, geralmente:
-
-```txt
-http://localhost:5173
-```
-
-## Estrutura
-
-```txt
-story-sense-rpg/
-├── public/
-├── src/
-│   ├── components/
-│   ├── data/
-│   ├── pages/
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── styles.css
-├── index.html
-├── package.json
-└── README.md
-```
+1. Instale a extensão Live Server.
+2. Clique com o botão direito em `index.html`.
+3. Selecione **Open with Live Server**.
 
 ## Observação ética
 
-O Story Sense RPG é apresentado como uma ideia de solução com IA, mas qualquer versão real precisaria garantir consentimento claro, privacidade, transparência, controle dos dados e opção de recusa dos jogadores.
+Este protótipo não coleta, grava, processa ou armazena dados reais de jogadores. A etapa de câmera e microfone é apenas representada visualmente para explicar a proposta da aplicação.

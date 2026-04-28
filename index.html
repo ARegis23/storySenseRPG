@@ -1,13 +1,291 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Story Sense RPG - protótipo web navegável para apoio narrativo com IA em mesas de RPG." />
-    <title>Story Sense RPG</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Story Sense RPG</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background-orb orb-one"></div>
+  <div class="background-orb orb-two"></div>
+  <div class="noise-layer"></div>
+
+  <main class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-card">
+        <div class="brand-icon">🎲</div>
+        <div>
+          <h1>Story Sense RPG</h1>
+          <p>Protótipo navegável</p>
+        </div>
+      </div>
+
+      <nav class="step-menu" aria-label="Navegação das telas">
+        <button class="step-button active" data-page="0"><span>01</span>Início</button>
+        <button class="step-button" data-page="1"><span>02</span>Como funciona</button>
+        <button class="step-button" data-page="2"><span>03</span>Funcionalidades</button>
+        <button class="step-button" data-page="3"><span>04</span>Login do mestre</button>
+        <button class="step-button" data-page="4"><span>05</span>Criar mesa</button>
+        <button class="step-button" data-page="5"><span>06</span>Consentimento</button>
+        <button class="step-button" data-page="6"><span>07</span>Observação</button>
+        <button class="step-button" data-page="7"><span>08</span>Painel do mestre</button>
+        <button class="step-button" data-page="8"><span>09</span>Campanha gerada</button>
+      </nav>
+
+      <section class="ethics-card">
+        <strong>🔐 Observação ética</strong>
+        <p>Este protótipo não grava áudio, vídeo ou dados reais. Tudo é apenas uma simulação visual para apresentação acadêmica.</p>
+      </section>
+    </aside>
+
+    <section class="content-area">
+      <!-- TELA 0 -->
+      <section class="page active" data-page="0">
+        <div class="hero-grid">
+          <article class="card hero-card">
+            <span class="pill">Protótipo acadêmico</span>
+            <h2>Uma IA de apoio narrativo para mestres de RPG.</h2>
+            <p>
+              O Story Sense RPG demonstra como uma aplicação poderia analisar o estilo da mesa, respeitar o consentimento dos jogadores e gerar aventuras personalizadas para o mestre.
+            </p>
+            <div class="hero-actions">
+              <button class="primary-button" data-next>Começar demonstração</button>
+              <button class="ghost-button" data-go="1">Ver funcionamento</button>
+            </div>
+          </article>
+
+          <article class="card preview-card">
+            <div class="map-frame">
+              <div class="map-dot dot-a"></div>
+              <div class="map-dot dot-b"></div>
+              <div class="map-dot dot-c"></div>
+              <span class="map-line line-a"></span>
+              <span class="map-line line-b"></span>
+              <div class="map-title">Mapa narrativo</div>
+            </div>
+            <div class="mini-status-grid">
+              <div><strong>88%</strong><span>Investigação</span></div>
+              <div><strong>76%</strong><span>Social</span></div>
+              <div><strong>42%</strong><span>Combate</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- TELA 1 -->
+      <section class="page" data-page="1">
+        <header class="page-header">
+          <span class="pill">Fluxo da aplicação</span>
+          <h2>Como o Story Sense funciona</h2>
+          <p>Uma visão simples do caminho real do app, desde a criação da mesa até a revisão do material pelo mestre.</p>
+        </header>
+
+        <div class="workflow-grid">
+          <article class="workflow-card"><div>📜</div><h3>1. Criação</h3><p>O mestre registra a mesa no sistema e define os parâmetros básicos.</p></article>
+          <article class="workflow-card"><div>📝</div><h3>2. Acordo</h3><p>Os jogadores leem e aceitam os termos de consentimento e privacidade.</p></article>
+          <article class="workflow-card highlighted"><div>👁️</div><h3>3. Escuta</h3><p>O sistema simula a análise da socialização inicial, com áudio e vídeo apenas representados.</p></article>
+          <article class="workflow-card"><div>🧠</div><h3>4. Análise</h3><p>O Story Sense processa perfis narrativos e identifica estilos da mesa.</p></article>
+          <article class="workflow-card danger-border"><div>🪄</div><h3>5. Geração</h3><p>A IA sugere arquétipos, desafios, NPCs ocultos e pistas.</p></article>
+          <article class="workflow-card danger-border"><div>📂</div><h3>6. Revisão</h3><p>O mestre revisa, edita e conecta os ganchos ao início da aventura.</p></article>
+        </div>
+      </section>
+
+      <!-- TELA 2 -->
+      <section class="page" data-page="2">
+        <header class="page-header">
+          <span class="pill">Produto proposto</span>
+          <h2>Funcionalidades principais</h2>
+          <p>Esta tela serve para apresentar os requisitos de forma visual durante o trabalho.</p>
+        </header>
+
+        <div class="features-grid">
+          <article><span>👥</span><p><strong>Cadastro de Mesas:</strong> gerenciamento rápido e intuitivo para múltiplas campanhas e sistemas.</p></article>
+          <article><span>🧙</span><p><strong>Sugestão de Personagens:</strong> arquétipos sob medida baseados na personalidade mapeada do grupo.</p></article>
+          <article><span>🤝</span><p><strong>Consentimento Integrado:</strong> módulo transparente de privacidade para os jogadores.</p></article>
+          <article><span>☠️</span><p><strong>Geração de Desafios:</strong> criação de enigmas, monstros, pistas e conflitos sociais.</p></article>
+          <article><span>🎥</span><p><strong>Análise Multimodal:</strong> captura simulada de câmera e microfone, sem armazenamento permanente.</p></article>
+          <article><span>📖</span><p><strong>One-Shots Dinâmicos:</strong> campanhas curtas completas, geradas e conectadas ao tom da mesa.</p></article>
+          <article><span>🧬</span><p><strong>Perfis Narrativos:</strong> identificação automática de estilos como investigador, combatente e diplomata.</p></article>
+          <article><span>✒️</span><p><strong>Edição do Mestre:</strong> dashboard para revisar, ajustar e reescrever ideias da IA.</p></article>
+        </div>
+      </section>
+
+      <!-- TELA 3 -->
+      <section class="page" data-page="3">
+        <header class="page-header">
+          <span class="pill">Tela 1</span>
+          <h2>Login do mestre</h2>
+          <p>Entrada demonstrativa do sistema, com identidade visual escura e clima de mapa digital.</p>
+        </header>
+
+        <div class="login-layout">
+          <article class="card login-card">
+            <div class="logo-large">🎲</div>
+            <h3>Story Sense RPG</h3>
+            <p>Entre para criar uma mesa, simular a análise e gerar uma aventura personalizada.</p>
+            <button class="primary-button" data-next>Entrar</button>
+            <button class="ghost-button" data-next>Criar conta</button>
+          </article>
+
+          <article class="card parchment-card">
+            <h3>Pergaminho digital</h3>
+            <p>Dados, pistas, mapas e perfis narrativos são organizados em uma central para o mestre.</p>
+            <ul>
+              <li>Visual escuro e fantasioso</li>
+              <li>Navegação simples</li>
+              <li>Fluxo pronto para apresentação</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- TELA 4 -->
+      <section class="page" data-page="4">
+        <header class="page-header">
+          <span class="pill">Tela 2</span>
+          <h2>Criar nova mesa</h2>
+          <p>O mestre define os parâmetros básicos da campanha antes da etapa de consentimento.</p>
+        </header>
+
+        <article class="card form-card">
+          <div class="form-grid">
+            <label>Nome da campanha<input type="text" value="O Assassinato no Solar Blackthorn" /></label>
+            <label>Sistema base<select><option>D&D 5e</option><option>GUMSHOE</option><option>Call of Cthulhu</option><option>Sistema próprio</option></select></label>
+            <label>Número de jogadores<input type="number" value="4" /></label>
+            <label>Duração<select><option>3 horas</option><option>2 horas</option><option>4 horas</option><option>Campanha longa</option></select></label>
+            <label>Tom da aventura<select><option>Mistério sombrio com humor ácido</option><option>Fantasia heroica</option><option>Intriga política</option><option>Terror investigativo</option></select></label>
+            <label>Nível de experiência<select><option>Intermediário</option><option>Iniciante</option><option>Avançado</option><option>Grupo misto</option></select></label>
+          </div>
+          <div class="summary-box">
+            <strong>Resumo:</strong> Uma aventura investigativa em D&D 5e para 4 jogadores, com foco em mistério social, pistas e suspeitos.
+          </div>
+          <button class="primary-button align-right" data-next>Continuar</button>
+        </article>
+      </section>
+
+      <!-- TELA 5 -->
+      <section class="page" data-page="5">
+        <header class="page-header">
+          <span class="pill">Tela 3</span>
+          <h2>Consentimento dos jogadores</h2>
+          <p>Cada participante deve aceitar a simulação antes do sistema seguir para a observação da mesa.</p>
+        </header>
+
+        <div class="consent-layout">
+          <article class="card">
+            <h3>Termo de participação</h3>
+            <p>O protótipo representa uma IA que observa estilos de interação, preferências narrativas e padrões gerais de comportamento na mesa.</p>
+            <p>Nenhum dado real é coletado nesta versão. A proposta é demonstrar transparência, autorização e controle.</p>
+            <a href="#" class="privacy-link">Como meus dados serão usados?</a>
+            <div class="progress-box">
+              <div><strong>3/4 aceitaram</strong><span>75%</span></div>
+              <div class="progress-bar"><span style="width: 75%"></span></div>
+            </div>
+          </article>
+
+          <article class="card players-card">
+            <h3>Jogadores</h3>
+            <div class="player-row"><span>Lia</span><strong class="accepted">Aceitou</strong></div>
+            <div class="player-row"><span>Caio</span><strong class="accepted">Aceitou</strong></div>
+            <div class="player-row"><span>Mara</span><strong class="pending">Pendente</strong></div>
+            <div class="player-row"><span>Ruan</span><strong class="accepted">Aceitou</strong></div>
+            <div class="button-row">
+              <button class="ghost-button">Aceito participar</button>
+              <button class="danger-button">Não aceito</button>
+            </div>
+            <button class="primary-button align-right" data-next>Iniciar observação</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- TELA 6 -->
+      <section class="page" data-page="6">
+        <header class="page-header">
+          <span class="pill">Tela 4</span>
+          <h2>Observação da mesa</h2>
+          <p>Simulação da etapa em que a IA observaria a socialização inicial da mesa.</p>
+        </header>
+
+        <div class="observation-layout">
+          <article class="card timer-card">
+            <div class="timer-ring">
+              <span>60:00</span>
+              <small>minutos</small>
+            </div>
+            <strong class="analysis-status">Análise em andamento</strong>
+            <div class="button-row center">
+              <button class="ghost-button">Pausar</button>
+              <button class="primary-button" data-next>Encerrar análise</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Avisos ativos</h3>
+            <div class="device-status"><span>🎥 Câmera ativa</span><strong></strong></div>
+            <div class="device-status"><span>🎙️ Microfone ativo</span><strong></strong></div>
+            <div class="summary-box">
+              A captura é apenas representada na interface. Na versão real, haveria políticas de privacidade, autorização e controle de armazenamento.
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- TELA 7 -->
+      <section class="page" data-page="7">
+        <header class="page-header">
+          <span class="pill">Tela 5</span>
+          <h2>Painel do mestre</h2>
+          <p>O mestre recebe leituras narrativas simuladas e sugestões para conduzir melhor a aventura.</p>
+        </header>
+
+        <div class="dashboard-grid">
+          <article class="card player-profile"><h3>Lia</h3><span>Investigadora intuitiva</span><p>Gosta de pistas, documentos antigos e conexões sutis.</p></article>
+          <article class="card player-profile"><h3>Caio</h3><span>Executor impulsivo</span><p>Prefere ação rápida, risco e pressão de tempo.</p></article>
+          <article class="card player-profile"><h3>Mara</h3><span>Diplomata estratégica</span><p>Valoriza conversa, negociação e segredos políticos.</p></article>
+          <article class="card player-profile"><h3>Ruan</h3><span>Caçador de enigmas</span><p>Procura padrões, símbolos e respostas escondidas.</p></article>
+        </div>
+
+        <article class="card recommendation-card">
+          <h3>Recomendação da IA</h3>
+          <p>Criar uma aventura de mistério em D&D 5e, com assassinato entre convidados, pistas contraditórias e poucas cenas de combate.</p>
+          <button class="primary-button align-right" data-next>Gerar aventura</button>
+        </article>
+      </section>
+
+      <!-- TELA 8 -->
+      <section class="page" data-page="8">
+        <header class="page-header">
+          <span class="pill">Tela 6</span>
+          <h2>Campanha gerada</h2>
+          <p>Resultado final do fluxo: um roteiro editável que o mestre poderia adaptar para a sessão.</p>
+        </header>
+
+        <div class="campaign-layout">
+          <article class="card campaign-main">
+            <span class="pill">D&D 5e recomendado</span>
+            <h3>O Assassinato no Solar Blackthorn</h3>
+            <p>Durante um banquete de reconciliação entre famílias rivais, um nobre é encontrado morto em uma sala trancada. Cada jogador possui um motivo aparente, mas o verdadeiro assassino usa as tensões do grupo como cortina de fumaça.</p>
+            <div class="button-row">
+              <button class="ghost-button">Editar</button>
+              <button class="primary-button">Exportar roteiro</button>
+            </div>
+          </article>
+
+          <article class="card list-card"><h3>Cenas</h3><ul><li>O Banquete dos Suspeitos</li><li>O Mapa Rasgado da Mansão</li><li>Interrogatório à Luz das Velas</li><li>Revelação no Salão dos Espelhos</li></ul></article>
+          <article class="card list-card"><h3>NPCs</h3><ul><li>Lorde Varian</li><li>Dama Sorelle</li><li>Capitão Merek</li><li>Escriba Nalia</li></ul></article>
+          <article class="card list-card"><h3>Desafios</h3><ul><li>Investigar pistas falsas</li><li>Convencer testemunhas</li><li>Resolver cifra do assassino</li><li>Evitar acusação injusta</li></ul></article>
+        </div>
+      </section>
+
+      <footer class="pagination-bar">
+        <button class="ghost-button" id="prevButton">← Voltar</button>
+        <span id="pageIndicator">Tela 1 de 9</span>
+        <button class="ghost-button" id="nextButton">Avançar →</button>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
 </html>
