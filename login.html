@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Sense RPG | Login</title>
+
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body class="auth-page">
+
+    <main class="auth-card">
+
+        <div class="sidebar-logo mb-md">
+            SS
+        </div>
+
+        <h1 class="auth-title">
+            Login
+        </h1>
+
+        <p class="auth-description">
+            Acesse sua conta para continuar.
+        </p>
+
+        <form class="form mt-lg" id="loginForm">
+
+            <div class="form-group">
+                <label for="email" class="form-label">E-mail</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="senha" class="form-label">Senha</label>
+                <input
+                    type="password"
+                    id="senha"
+                    name="senha"
+                    class="form-control"
+                    placeholder="Digite sua senha"
+                    required
+                >
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+                Entrar
+            </button>
+
+        </form>
+
+        <div class="mt-lg text-center">
+            <a href="index.html" class="btn btn-outline btn-block">
+                Voltar
+            </a>
+        </div>
+
+        <div class="mt-lg text-center">
+            <p class="text-muted">
+                Não possui cadastro?
+                <a href="#" class="text-gold">Criar conta</a>
+            </p>
+
+            <p class="text-muted mt-sm">
+                <a href="#" class="text-gold">Esqueci minha senha</a>
+            </p>
+        </div>
+
+    </main>
+
+    <script>
+        const loginForm = document.getElementById("loginForm");
+
+        loginForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            window.location.href = "dashboard.html";
+        });
+    </script>
+
+</body>
+</html>

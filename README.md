@@ -1,47 +1,117 @@
 # Story Sense RPG
 
-Protótipo web navegável de uma aplicação com IA para auxiliar mestres de RPG na criação de campanhas personalizadas a partir do perfil narrativo dos jogadores.
+Protótipo navegável em HTML, CSS e JavaScript para uma aplicação de apoio a mestres de RPG de mesa.
 
-## Objetivo
+O projeto tem como objetivo demonstrar uma aplicação que utiliza conceitos de inteligência artificial para auxiliar mestres na criação de campanhas, personagens, desafios, pistas e one-shots personalizadas com base no perfil narrativo dos jogadores.
 
-Demonstrar, de forma visual e navegável, como uma aplicação poderia:
+> Nesta etapa, o projeto não possui backend, banco de dados ou integração real com IA.  
+> As páginas serão navegáveis e os dados serão simulados no próprio front-end.
 
-- cadastrar uma mesa de RPG;
-- solicitar consentimento dos jogadores;
-- simular uma etapa de observação da mesa;
-- gerar perfis narrativos dos participantes;
-- sugerir uma campanha personalizada para o mestre.
+---
 
-## Tecnologias usadas
+## 1. Objetivo do Projeto
 
-- HTML5
-- CSS3
-- JavaScript puro
+O Story Sense RPG é uma aplicação pensada para apoiar mestres de RPG durante a preparação de mesas narrativas.
 
-Não há backend, banco de dados, login real, câmera real ou microfone real. Tudo é uma simulação visual para fins acadêmicos e de portfólio.
+A ideia central é permitir que o mestre:
 
-## Telas do protótipo
+- Cadastre mesas de RPG;
+- Registre jogadores participantes;
+- Apresente termos de consentimento e privacidade;
+- Simule uma etapa de escuta e análise da mesa;
+- Gere perfis narrativos dos jogadores;
+- Receba sugestões de personagens, desafios, pistas e conflitos;
+- Monte one-shots completas;
+- Revise e edite o material antes de usar em jogo.
 
-1. Início
-2. Como funciona
-3. Funcionalidades principais
-4. Login do mestre
-5. Criar nova mesa
-6. Consentimento dos jogadores
-7. Observação da mesa
-8. Painel do mestre
-9. Campanha gerada
+---
 
-## Como executar
+## 2. Contexto da Aplicação
 
-Basta abrir o arquivo `index.html` no navegador.
+Durante uma mesa de RPG, cada jogador possui um estilo diferente de participação.
 
-Também é possível usar a extensão Live Server no VS Code:
+Alguns jogadores gostam de investigação.  
+Outros preferem combate.  
+Alguns focam em interpretação, drama, mistério, enigmas ou interação social.
 
-1. Instale a extensão Live Server.
-2. Clique com o botão direito em `index.html`.
-3. Selecione **Open with Live Server**.
+O Story Sense propõe uma solução em que a IA auxiliaria o mestre a entender melhor esses estilos e transformar essas informações em material narrativo útil.
 
-## Observação ética
+Nesta versão inicial, a aplicação será apenas um protótipo visual navegável.
 
-Este protótipo não coleta, grava, processa ou armazena dados reais de jogadores. A etapa de câmera e microfone é apenas representada visualmente para explicar a proposta da aplicação.
+---
+
+## 3. Escopo desta Versão
+
+Esta primeira versão contempla apenas o front-end.
+
+### Incluído nesta etapa
+
+- Páginas HTML separadas;
+- Estrutura organizada de pastas;
+- Navegação entre páginas;
+- Layout base da aplicação;
+- Telas de cadastro e consulta;
+- Dados simulados;
+- Botões e fluxos visuais;
+- Área de revisão do mestre;
+- Exemplo de one-shot no estilo D&D.
+
+### Fora do escopo nesta etapa
+
+- Backend;
+- Login real;
+- Banco de dados;
+- Captura real de câmera;
+- Captura real de microfone;
+- Processamento real de IA;
+- Armazenamento de dados sensíveis;
+- Integração com APIs externas.
+
+---
+
+## 4. Tecnologias Utilizadas
+
+O protótipo será desenvolvido com:
+
+- HTML5;
+- CSS3;
+- JavaScript puro;
+- Estrutura de páginas separadas;
+- Dados simulados em arquivos JSON.
+
+Futuramente, o projeto poderá receber:
+
+- Backend em Python, Flask ou Node.js;
+- Banco de dados;
+- Sistema de autenticação;
+- API de IA;
+- Controle real de permissões;
+- Armazenamento seguro de consentimentos.
+
+---
+
+## 5. Estrutura de Pastas
+
+```txt
+storySenseRPG/
+│
+├── README.md
+│
+├── index.html
+├── login.html
+├── dashboard.html
+│
+├── pages/
+│   ├── mesas/
+│   ├── consentimento/
+│   ├── analise/
+│   ├── gerador/
+│   ├── oneshot/
+│   ├── revisao/
+│   └── configuracoes/
+│
+├── static/
+│   ├── css/
+│   ├── js/
+│   ├── img/
+│   └── data/

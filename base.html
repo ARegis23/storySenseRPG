@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- =====================================================
+         CONFIGURAÇÕES BÁSICAS DA PÁGINA
+         ===================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Sense RPG</title>
+
+    <!-- =====================================================
+         CSS GLOBAL
+         ===================================================== -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <!-- =====================================================
+         LAYOUT PRINCIPAL DA APLICAÇÃO
+         ===================================================== -->
+    <div class="app-layout">
+
+        <!-- =================================================
+             MENU LATERAL FIXO
+             Parte repetida em praticamente todas as páginas
+             ================================================= -->
+        <aside class="sidebar">
+
+            <!-- Marca / Logo -->
+            <div class="sidebar-brand">
+                <div class="sidebar-logo">
+                    🧠
+                </div>
+
+                <h1 class="sidebar-title">
+                    Story Sense
+                </h1>
+
+                <p class="sidebar-description">
+                    Assistente narrativo para mestres de RPG criarem mesas,
+                    personagens, pistas, desafios e one-shots personalizadas.
+                </p>
+            </div>
+
+            <!-- Navegação principal -->
+            <p class="sidebar-section-title">Navegação</p>
+
+            <nav class="sidebar-nav">
+
+                <a href="dashboard.html" class="sidebar-link active">
+                    <span class="sidebar-link-icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="pages/mesas/mesa-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🎲</span>
+                    <span>Mesas</span>
+                </a>
+
+                <a href="pages/consentimento/consentimento.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">📜</span>
+                    <span>Consentimento</span>
+                </a>
+
+                <a href="pages/analise/escuta.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🎙️</span>
+                    <span>Escuta e Análise</span>
+                </a>
+
+                <a href="pages/analise/perfis.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🧬</span>
+                    <span>Perfis Narrativos</span>
+                </a>
+
+                <a href="pages/gerador/gerador.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">✨</span>
+                    <span>Gerador</span>
+                </a>
+
+                <a href="pages/oneshot/oneshot-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🕯️</span>
+                    <span>One-Shots</span>
+                </a>
+
+                <a href="pages/revisao/revisao.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">✍️</span>
+                    <span>Revisão</span>
+                </a>
+
+                <a href="pages/configuracoes/configuracoes.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">⚙️</span>
+                    <span>Configurações</span>
+                </a>
+
+            </nav>
+
+            <!-- Área inferior do menu -->
+            <div class="sidebar-footer">
+                <strong>Protótipo visual</strong>
+                <br>
+                Esta versão ainda não possui backend, banco de dados,
+                login real ou integração com IA.
+            </div>
+        </aside>
+
+
+        <!-- =================================================
+             CONTEÚDO PRINCIPAL
+             Cada página trocará apenas o conteúdo dentro daqui
+             ================================================= -->
+        <main class="main-content">
+
+            <!-- =============================================
+                 TOPO DA PÁGINA
+                 Também será repetido nas páginas internas
+                 ============================================= -->
+            <header class="topbar">
+
+                <!-- Campo de busca visual -->
+                <div class="search-box">
+                    <span>🔎</span>
+                    <input 
+                        type="search" 
+                        placeholder="Buscar mesa, jogador, pista, NPC ou desafio..."
+                    >
+                </div>
+
+                <!-- Status visual da sessão -->
+                <div class="topbar-actions">
+                    <span class="status-pill">
+                        <span class="status-dot"></span>
+                        Sessão demo ativa
+                    </span>
+
+                    <a href="login.html" class="btn btn-outline btn-sm">
+                        Sair
+                    </a>
+                </div>
+            </header>
+
+
+            <!-- =============================================
+                 CABEÇALHO DA PÁGINA
+                 Este trecho poderá mudar em cada arquivo
+                 ============================================= -->
+            <section class="page-container">
+
+                <div class="page-header">
+                    <small>Área atual</small>
+
+                    <h2 class="page-title">
+                        Título da Página
+                    </h2>
+
+                    <p class="page-subtitle">
+                        Descrição breve da página atual. Aqui explicamos ao mestre
+                        qual é a função desta tela dentro do fluxo da aplicação.
+                    </p>
+                </div>
+
+
+                <!-- =========================================
+                     CONTEÚDO MUTÁVEL DA PÁGINA
+                     Nas próximas páginas, alteraremos daqui para baixo
+                     ========================================= -->
+                <section class="card card-gold">
+                    <h3 class="card-title">
+                        Conteúdo da página
+                    </h3>
+
+                    <p class="card-subtitle">
+                        Este é apenas o espaço reservado para o conteúdo específico
+                        de cada tela.
+                    </p>
+
+                    <p class="text-muted">
+                        Em uma página de mesas, por exemplo, aqui entraria a tabela
+                        de mesas cadastradas. Em uma página de consentimento, entraria
+                        a lista de jogadores e o status de aceite dos termos.
+                    </p>
+                </section>
+
+            </section>
+
+        </main>
+    </div>
+
+
+    <!-- =====================================================
+         MODAL PADRÃO
+         Podemos reaproveitar depois para alertas, confirmações,
+         exclusões e avisos de privacidade.
+         ===================================================== -->
+    <div class="modal-backdrop" id="modalPadrao">
+        <div class="modal">
+            <h3 class="modal-title">Aviso</h3>
+
+            <p class="modal-description">
+                Esta é uma janela modal padrão do protótipo.
+            </p>
+
+            <div class="modal-actions">
+                <button class="btn btn-outline" type="button">
+                    Cancelar
+                </button>
+
+                <button class="btn btn-primary" type="button">
+                    Confirmar
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT GLOBAL
+         ===================================================== -->
+    <script src="static/js/main.js"></script>
+    <script src="static/js/navigation.js"></script>
+</body>
+</html>
