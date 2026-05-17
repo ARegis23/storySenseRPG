@@ -1,0 +1,396 @@
+<!-- ======================================================
+     pages/jogadores/jogador-add.html
+     ====================================================== -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Sense RPG | Novo Jogador</title>
+
+    <link rel="stylesheet" href="../../static/css/style.css">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <!-- =============================================
+             SIDEBAR
+             ============================================= -->
+        <aside class="sidebar">
+
+            <div class="sidebar-brand">
+
+                <div class="sidebar-logo">
+                    SS
+                </div>
+
+                <h1 class="sidebar-title">
+                    Story Sense
+                </h1>
+
+                <p class="sidebar-description">
+                    Painel do mestre
+                </p>
+
+            </div>
+
+            <p class="sidebar-section-title">
+                Navegação
+            </p>
+
+            <nav class="sidebar-nav">
+
+                <a href="../../dashboard.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="../mesas/mesa-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🎲</span>
+                    <span>Mesas</span>
+                </a>
+
+                <a href="jogador-list.html" class="sidebar-link active">
+                    <span class="sidebar-link-icon">👥</span>
+                    <span>Jogadores</span>
+                </a>
+
+                <a href="../consentimento/consentimento.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">📄</span>
+                    <span>Consentimentos</span>
+                </a>
+
+                <a href="../analise/escuta.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🧠</span>
+                    <span>Análises</span>
+                </a>
+
+                <a href="../gerador/gerador.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">✨</span>
+                    <span>Gerador</span>
+                </a>
+
+                <a href="../oneshot/oneshot-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🕯️</span>
+                    <span>One-Shots</span>
+                </a>
+
+                <a href="../revisao/revisao.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">✍️</span>
+                    <span>Revisão</span>
+                </a>
+
+                <a href="../configuracoes/configuracoes.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">⚙️</span>
+                    <span>Configurações</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- =============================================
+             CONTEÚDO
+             ============================================= -->
+        <main class="main-content">
+
+            <!-- =========================================
+                 TOPBAR
+                 ========================================= -->
+            <header class="topbar">
+
+                <div class="search-box">
+
+                    <span>🔎</span>
+
+                    <input
+                        type="search"
+                        placeholder="Buscar..."
+                    >
+
+                </div>
+
+                <div class="topbar-actions">
+
+                    <a href="jogador-list.html" class="btn btn-outline btn-sm">
+                        Voltar
+                    </a>
+
+                    <a href="../../login.html" class="btn btn-outline btn-sm">
+                        Sair
+                    </a>
+
+                </div>
+
+            </header>
+
+
+            <!-- =========================================
+                 HEADER
+                 ========================================= -->
+            <section class="page-container">
+
+                <div class="page-header">
+
+                    <small>
+                        Jogadores
+                    </small>
+
+                    <h2 class="page-title">
+                        Novo Jogador
+                    </h2>
+
+                    <p class="page-subtitle">
+                        Cadastre um novo jogador na aplicação.
+                    </p>
+
+                </div>
+
+
+                <!-- =====================================
+                     FORMULÁRIO
+                     ===================================== -->
+                <section class="card">
+
+                    <form class="form">
+
+                        <!-- =============================
+                             PRIMEIRA LINHA
+                             ============================= -->
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label class="form-label">
+                                    Nome do Jogador
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Digite o nome"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label class="form-label">
+                                    Personagem
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Nome do personagem"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =============================
+                             SEGUNDA LINHA
+                             ============================= -->
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label class="form-label">
+                                    Mesa
+                                </label>
+
+                                <select class="form-select">
+
+                                    <option>
+                                        Selecione
+                                    </option>
+
+                                    <option>
+                                        Os Ecos de Valdora
+                                    </option>
+
+                                    <option>
+                                        Neon Abyss
+                                    </option>
+
+                                    <option>
+                                        A Última Vigília
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label class="form-label">
+                                    Perfil Narrativo
+                                </label>
+
+                                <select class="form-select">
+
+                                    <option>
+                                        Selecione
+                                    </option>
+
+                                    <option>
+                                        Investigador
+                                    </option>
+
+                                    <option>
+                                        Social
+                                    </option>
+
+                                    <option>
+                                        Combate
+                                    </option>
+
+                                    <option>
+                                        Estratégico
+                                    </option>
+
+                                    <option>
+                                        Explorador
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =============================
+                             CONTATO
+                             ============================= -->
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label class="form-label">
+                                    E-mail
+                                </label>
+
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    placeholder="Digite o e-mail"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label class="form-label">
+                                    Status
+                                </label>
+
+                                <select class="form-select">
+
+                                    <option>
+                                        Ativo
+                                    </option>
+
+                                    <option>
+                                        Pendente
+                                    </option>
+
+                                    <option>
+                                        Inativo
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =============================
+                             OBSERVAÇÕES
+                             ============================= -->
+                        <div class="form-group">
+
+                            <label class="form-label">
+                                Observações
+                            </label>
+
+                            <textarea
+                                class="form-textarea"
+                                placeholder="Anotações gerais..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- =============================
+                             CHECKBOXES
+                             ============================= -->
+                        <div class="grid">
+
+                            <label class="checkbox-card">
+
+                                <input type="checkbox">
+
+                                <span>
+                                    Consentimento aceito
+                                </span>
+
+                            </label>
+
+
+                            <label class="checkbox-card">
+
+                                <input type="checkbox">
+
+                                <span>
+                                    Participar de análises narrativas
+                                </span>
+
+                            </label>
+
+                        </div>
+
+
+                        <!-- =============================
+                             BOTÕES
+                             ============================= -->
+                        <div class="topbar-actions mt-xl">
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary"
+                            >
+                                Salvar Jogador
+                            </button>
+
+                            <a
+                                href="jogador-list.html"
+                                class="btn btn-outline"
+                            >
+                                Cancelar
+                            </a>
+
+                        </div>
+
+                    </form>
+
+                </section>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

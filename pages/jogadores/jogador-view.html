@@ -1,0 +1,340 @@
+<!-- ======================================================
+     pages/jogadores/jogador-view.html
+     ====================================================== -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Sense RPG | Visualizar Jogador</title>
+
+    <link rel="stylesheet" href="../../static/css/style.css">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <!-- =============================================
+             SIDEBAR
+             ============================================= -->
+        <aside class="sidebar">
+
+            <div class="sidebar-brand">
+
+                <div class="sidebar-logo">
+                    SS
+                </div>
+
+                <h1 class="sidebar-title">
+                    Story Sense
+                </h1>
+
+                <p class="sidebar-description">
+                    Painel do mestre
+                </p>
+
+            </div>
+
+            <p class="sidebar-section-title">
+                Navegação
+            </p>
+
+            <nav class="sidebar-nav">
+
+                <a href="../../dashboard.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="../mesas/mesa-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🎲</span>
+                    <span>Mesas</span>
+                </a>
+
+                <a href="jogador-list.html" class="sidebar-link active">
+                    <span class="sidebar-link-icon">👥</span>
+                    <span>Jogadores</span>
+                </a>
+
+                <a href="../consentimento/consentimento.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">📄</span>
+                    <span>Consentimentos</span>
+                </a>
+
+                <a href="../analise/escuta.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🧠</span>
+                    <span>Análises</span>
+                </a>
+
+                <a href="../gerador/gerador.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">✨</span>
+                    <span>Gerador</span>
+                </a>
+
+                <a href="../oneshot/oneshot-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🕯️</span>
+                    <span>One-Shots</span>
+                </a>
+
+                <a href="../revisao/revisao.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">✍️</span>
+                    <span>Revisão</span>
+                </a>
+
+                <a href="../configuracoes/configuracoes.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">⚙️</span>
+                    <span>Configurações</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- =============================================
+             CONTEÚDO
+             ============================================= -->
+        <main class="main-content">
+
+            <!-- =========================================
+                 TOPBAR
+                 ========================================= -->
+            <header class="topbar">
+
+                <div class="search-box">
+
+                    <span>🔎</span>
+
+                    <input
+                        type="search"
+                        placeholder="Buscar..."
+                    >
+
+                </div>
+
+                <div class="topbar-actions">
+
+                    <a href="jogador-edit.html" class="btn btn-secondary btn-sm">
+                        Editar
+                    </a>
+
+                    <a href="jogador-list.html" class="btn btn-outline btn-sm">
+                        Voltar
+                    </a>
+
+                </div>
+
+            </header>
+
+
+            <!-- =========================================
+                 HEADER
+                 ========================================= -->
+            <section class="page-container">
+
+                <div class="page-header">
+
+                    <small>
+                        Jogadores
+                    </small>
+
+                    <h2 class="page-title">
+                        Ana Clara
+                    </h2>
+
+                    <p class="page-subtitle">
+                        Jogadora vinculada à mesa Os Ecos de Valdora.
+                    </p>
+
+                </div>
+
+
+                <!-- =====================================
+                     CARDS RESUMO
+                     ===================================== -->
+                <section class="grid grid-4 mb-xl">
+
+                    <article class="card card-gold">
+
+                        <p class="text-muted mb-sm">
+                            Personagem
+                        </p>
+
+                        <h3 class="card-title">
+                            Lyra
+                        </h3>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <p class="text-muted mb-sm">
+                            Perfil
+                        </p>
+
+                        <h3 class="card-title">
+                            Investigadora
+                        </h3>
+
+                    </article>
+
+
+                    <article class="card card-purple">
+
+                        <p class="text-muted mb-sm">
+                            Mesa
+                        </p>
+
+                        <h3 class="card-title">
+                            Valdora
+                        </h3>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <p class="text-muted mb-sm">
+                            Status
+                        </p>
+
+                        <span class="badge badge-success">
+                            Ativo
+                        </span>
+
+                    </article>
+
+                </section>
+
+
+                <!-- =====================================
+                     INFORMAÇÕES
+                     ===================================== -->
+                <section class="grid grid-2">
+
+                    <!-- ================================
+                         DADOS
+                         ================================ -->
+                    <article class="card">
+
+                        <h3 class="card-title mb-lg">
+                            Dados do Jogador
+                        </h3>
+
+                        <div class="grid">
+
+                            <div class="alert">
+                                Nome:
+                                <strong>Ana Clara</strong>
+                            </div>
+
+                            <div class="alert">
+                                Personagem:
+                                <strong>Lyra</strong>
+                            </div>
+
+                            <div class="alert">
+                                Perfil:
+                                <strong>Investigadora</strong>
+                            </div>
+
+                            <div class="alert">
+                                Mesa:
+                                <strong>Os Ecos de Valdora</strong>
+                            </div>
+
+                            <div class="alert">
+                                E-mail:
+                                <strong>ana@email.com</strong>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- ================================
+                         CONFIGURAÇÕES
+                         ================================ -->
+                    <article class="card">
+
+                        <h3 class="card-title mb-lg">
+                            Configurações
+                        </h3>
+
+                        <div class="grid">
+
+                            <div class="alert">
+                                Consentimento:
+                                <strong>Aceito</strong>
+                            </div>
+
+                            <div class="alert">
+                                Participação em análise:
+                                <strong>Ativada</strong>
+                            </div>
+
+                            <div class="alert">
+                                Última atividade:
+                                <strong>Ontem</strong>
+                            </div>
+
+                            <div class="alert">
+                                Status:
+                                <strong>Ativo</strong>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+                <!-- =====================================
+                     OBSERVAÇÕES
+                     ===================================== -->
+                <section class="card mt-xl">
+
+                    <h3 class="card-title mb-md">
+                        Observações
+                    </h3>
+
+                    <p class="text-muted">
+                        Jogadora focada em investigação e exploração narrativa.
+                        Costuma interagir bastante com NPCs e pistas durante as sessões.
+                    </p>
+
+                </section>
+
+
+                <!-- =====================================
+                     AÇÕES
+                     ===================================== -->
+                <section class="topbar-actions mt-xl">
+
+                    <a href="jogador-edit.html" class="btn btn-secondary">
+                        Editar Jogador
+                    </a>
+
+                    <a href="../analise/escuta.html" class="btn btn-primary">
+                        Ver Análises
+                    </a>
+
+                    <a href="jogador-list.html" class="btn btn-outline">
+                        Voltar
+                    </a>
+
+                </section>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
