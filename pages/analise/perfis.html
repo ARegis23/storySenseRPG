@@ -1,0 +1,317 @@
+<!-- ======================================================
+     pages/analise/perfis.html
+     ====================================================== -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Sense RPG | Perfis Narrativos</title>
+
+    <link rel="stylesheet" href="../../static/css/style.css">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <!-- =============================================
+             SIDEBAR
+             ============================================= -->
+        <aside class="sidebar">
+
+            <div class="sidebar-brand">
+
+                <div class="sidebar-logo">
+                    SS
+                </div>
+
+                <h1 class="sidebar-title">
+                    Story Sense
+                </h1>
+
+                <p class="sidebar-description">
+                    Painel do mestre
+                </p>
+
+            </div>
+
+            <p class="sidebar-section-title">
+                Navegação
+            </p>
+
+            <nav class="sidebar-nav">
+
+                <a href="../../dashboard.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="../mesas/mesa-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🎲</span>
+                    <span>Mesas</span>
+                </a>
+
+                <a href="../jogadores/jogador-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">👥</span>
+                    <span>Jogadores</span>
+                </a>
+
+                <a href="../consentimento/consentimento.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">📄</span>
+                    <span>Consentimentos</span>
+                </a>
+
+                <a href="escuta.html" class="sidebar-link active">
+                    <span class="sidebar-link-icon">🧠</span>
+                    <span>Análises</span>
+                </a>
+
+                <a href="../gerador/gerador.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">✨</span>
+                    <span>Gerador</span>
+                </a>
+
+                <a href="../oneshot/oneshot-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🕯️</span>
+                    <span>One-Shots</span>
+                </a>
+
+                <a href="../revisao/revisao.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">✍️</span>
+                    <span>Revisão</span>
+                </a>
+
+                <a href="../configuracoes/configuracoes.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">⚙️</span>
+                    <span>Configurações</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+
+        <!-- =============================================
+             CONTEÚDO
+             ============================================= -->
+        <main class="main-content">
+
+            <!-- =========================================
+                 TOPBAR
+                 ========================================= -->
+            <header class="topbar">
+
+                <div class="search-box">
+
+                    <span>🔎</span>
+
+                    <input
+                        type="search"
+                        placeholder="Buscar perfil..."
+                    >
+
+                </div>
+
+                <div class="topbar-actions">
+
+                    <a href="escuta.html" class="btn btn-outline btn-sm">
+                        Escuta
+                    </a>
+
+                    <a href="resultado-analise.html" class="btn btn-primary btn-sm">
+                        Resultados
+                    </a>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =========================================
+                 HEADER
+                 ========================================= -->
+            <section class="page-container">
+
+                <div class="page-header">
+
+                    <small>
+                        Análises
+                    </small>
+
+                    <h2 class="page-title">
+                        Perfis Narrativos
+                    </h2>
+
+                    <p class="page-subtitle">
+                        Classificações comportamentais observadas durante sessões.
+                    </p>
+
+                </div>
+
+
+
+                <!-- =====================================
+                     PERFIS
+                     ===================================== -->
+                <section class="grid grid-2">
+
+                    <!-- ================================
+                         INVESTIGADOR
+                         ================================ -->
+                    <article class="card">
+
+                        <div class="card-header mb-lg">
+
+                            <h3 class="card-title">
+                                🧩 Investigador
+                            </h3>
+
+                            <p class="card-subtitle">
+                                Busca pistas, lógica e mistérios.
+                            </p>
+
+                        </div>
+
+                        <div class="grid">
+
+                            <div class="alert">
+                                Interesse alto em enigmas e exploração.
+                            </div>
+
+                            <div class="alert">
+                                Maior interação com documentos e lore.
+                            </div>
+
+                            <div class="alert">
+                                Tendência a teorias e hipóteses.
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ================================
+                         SOCIAL
+                         ================================ -->
+                    <article class="card">
+
+                        <div class="card-header mb-lg">
+
+                            <h3 class="card-title">
+                                🎭 Social
+                            </h3>
+
+                            <p class="card-subtitle">
+                                Foco em relações e diálogos.
+                            </p>
+
+                        </div>
+
+                        <div class="grid">
+
+                            <div class="alert">
+                                Forte vínculo com NPCs.
+                            </div>
+
+                            <div class="alert">
+                                Participação intensa em cenas sociais.
+                            </div>
+
+                            <div class="alert">
+                                Interesse em política e diplomacia.
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ================================
+                         COMBATE
+                         ================================ -->
+                    <article class="card">
+
+                        <div class="card-header mb-lg">
+
+                            <h3 class="card-title">
+                                ⚔️ Combate
+                            </h3>
+
+                            <p class="card-subtitle">
+                                Preferência por ação e desafios.
+                            </p>
+
+                        </div>
+
+                        <div class="grid">
+
+                            <div class="alert">
+                                Busca confrontos frequentes.
+                            </div>
+
+                            <div class="alert">
+                                Interesse em evolução de poder.
+                            </div>
+
+                            <div class="alert">
+                                Participação ativa em batalhas.
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ================================
+                         EXPLORADOR
+                         ================================ -->
+                    <article class="card">
+
+                        <div class="card-header mb-lg">
+
+                            <h3 class="card-title">
+                                🌎 Explorador
+                            </h3>
+
+                            <p class="card-subtitle">
+                                Interesse em mundo e descoberta.
+                            </p>
+
+                        </div>
+
+                        <div class="grid">
+
+                            <div class="alert">
+                                Interesse em mapas e viagens.
+                            </div>
+
+                            <div class="alert">
+                                Explora áreas opcionais.
+                            </div>
+
+                            <div class="alert">
+                                Forte curiosidade narrativa.
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </section>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
