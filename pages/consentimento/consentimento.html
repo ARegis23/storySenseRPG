@@ -1,0 +1,368 @@
+<!-- ======================================================
+     pages/consentimento/consentimento.html
+     ====================================================== -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Sense RPG | Consentimentos</title>
+
+    <link rel="stylesheet" href="../../static/css/style.css">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <!-- =============================================
+             SIDEBAR
+             ============================================= -->
+        <aside class="sidebar">
+
+            <div class="sidebar-brand">
+
+                <div class="sidebar-logo">
+                    SS
+                </div>
+
+                <h1 class="sidebar-title">
+                    Story Sense
+                </h1>
+
+                <p class="sidebar-description">
+                    Painel do mestre
+                </p>
+
+            </div>
+
+            <p class="sidebar-section-title">
+                Navegação
+            </p>
+
+            <nav class="sidebar-nav">
+
+                <a href="../../dashboard.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="../mesas/mesa-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🎲</span>
+                    <span>Mesas</span>
+                </a>
+
+                <a href="../jogadores/jogador-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">👥</span>
+                    <span>Jogadores</span>
+                </a>
+
+                <a href="consentimento.html" class="sidebar-link active">
+                    <span class="sidebar-link-icon">📄</span>
+                    <span>Consentimentos</span>
+                </a>
+
+                <a href="../analise/escuta.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🧠</span>
+                    <span>Análises</span>
+                </a>
+
+                <a href="../gerador/gerador.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">✨</span>
+                    <span>Gerador</span>
+                </a>
+
+                <a href="../oneshot/oneshot-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🕯️</span>
+                    <span>One-Shots</span>
+                </a>
+
+                <a href="../revisao/revisao.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">✍️</span>
+                    <span>Revisão</span>
+                </a>
+
+                <a href="../configuracoes/configuracoes.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">⚙️</span>
+                    <span>Configurações</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- =============================================
+             CONTEÚDO
+             ============================================= -->
+        <main class="main-content">
+
+            <!-- =========================================
+                 TOPBAR
+                 ========================================= -->
+            <header class="topbar">
+
+                <div class="search-box">
+
+                    <span>🔎</span>
+
+                    <input
+                        type="search"
+                        placeholder="Buscar consentimento..."
+                    >
+
+                </div>
+
+                <div class="topbar-actions">
+
+                    <a href="../../login.html" class="btn btn-outline btn-sm">
+                        Sair
+                    </a>
+
+                </div>
+
+            </header>
+
+
+            <!-- =========================================
+                 HEADER
+                 ========================================= -->
+            <section class="page-container">
+
+                <div class="page-header">
+
+                    <small>
+                        Consentimentos
+                    </small>
+
+                    <h2 class="page-title">
+                        Gestão de Consentimentos
+                    </h2>
+
+                    <p class="page-subtitle">
+                        Controle de permissões narrativas e análises dos jogadores.
+                    </p>
+
+                </div>
+
+
+                <!-- =====================================
+                     STATUS GERAL
+                     ===================================== -->
+                <section class="grid grid-4 mb-xl">
+
+                    <article class="card card-gold">
+
+                        <p class="text-muted mb-sm">
+                            Aceitos
+                        </p>
+
+                        <h3 class="card-title">
+                            18
+                        </h3>
+
+                    </article>
+
+
+                    <article class="card card-danger">
+
+                        <p class="text-muted mb-sm">
+                            Pendentes
+                        </p>
+
+                        <h3 class="card-title">
+                            04
+                        </h3>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <p class="text-muted mb-sm">
+                            Recusados
+                        </p>
+
+                        <h3 class="card-title">
+                            01
+                        </h3>
+
+                    </article>
+
+
+                    <article class="card card-purple">
+
+                        <p class="text-muted mb-sm">
+                            Total
+                        </p>
+
+                        <h3 class="card-title">
+                            23
+                        </h3>
+
+                    </article>
+
+                </section>
+
+
+                <!-- =====================================
+                     TABELA
+                     ===================================== -->
+                <section class="card">
+
+                    <div class="card-header mb-lg">
+
+                        <h3 class="card-title">
+                            Lista de Consentimentos
+                        </h3>
+
+                        <p class="card-subtitle">
+                            Situação atual dos jogadores cadastrados.
+                        </p>
+
+                    </div>
+
+                    <div class="table-wrapper">
+
+                        <table class="table">
+
+                            <thead>
+
+                                <tr>
+                                    <th>Jogador</th>
+                                    <th>Mesa</th>
+                                    <th>Análise Narrativa</th>
+                                    <th>Status</th>
+                                    <th>Atualização</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>
+                                        Ana Clara
+                                    </td>
+
+                                    <td>
+                                        Os Ecos de Valdora
+                                    </td>
+
+                                    <td>
+                                        Permitida
+                                    </td>
+
+                                    <td>
+                                        <span class="badge badge-success">
+                                            Aceito
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        12/05/2026
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        Bruno Henrique
+                                    </td>
+
+                                    <td>
+                                        Neon Abyss
+                                    </td>
+
+                                    <td>
+                                        Permitida
+                                    </td>
+
+                                    <td>
+                                        <span class="badge badge-warning">
+                                            Pendente
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        14/05/2026
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        Camila Souza
+                                    </td>
+
+                                    <td>
+                                        A Última Vigília
+                                    </td>
+
+                                    <td>
+                                        Negada
+                                    </td>
+
+                                    <td>
+                                        <span class="badge badge-danger">
+                                            Recusado
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        10/05/2026
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =====================================
+                     TERMO
+                     ===================================== -->
+                <section class="card mt-xl">
+
+                    <div class="card-header mb-lg">
+
+                        <h3 class="card-title">
+                            Modelo de Consentimento
+                        </h3>
+
+                        <p class="card-subtitle">
+                            Texto utilizado para autorização de uso narrativo.
+                        </p>
+
+                    </div>
+
+                    <div class="alert">
+
+                        O participante autoriza o uso de informações narrativas,
+                        preferências de jogo e interações para fins de análise,
+                        personalização de campanhas e geração de conteúdo dentro
+                        da plataforma Story Sense RPG.
+
+                    </div>
+
+                </section>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
