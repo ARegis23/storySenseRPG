@@ -1,0 +1,443 @@
+<!-- ======================================================
+     pages/configuracoes/configuracoes.html
+     ====================================================== -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Sense RPG | Configurações</title>
+
+    <link rel="stylesheet" href="../../static/css/style.css">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <!-- =============================================
+             SIDEBAR
+             ============================================= -->
+        <aside class="sidebar">
+
+            <div class="sidebar-brand">
+
+                <div class="sidebar-logo">
+                    StorySense
+                </div>
+
+                <h1 class="sidebar-title">
+                    Story Sense
+                </h1>
+
+                <p class="sidebar-description">
+                    Painel do mestre
+                </p>
+
+            </div>
+
+            <p class="sidebar-section-title">
+                Navegação
+            </p>
+
+            <nav class="sidebar-nav">
+
+                <a href="../../dashboard.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="../mesas/mesa-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🎲</span>
+                    <span>Mesas</span>
+                </a>
+
+                <a href="../jogadores/jogador-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">👥</span>
+                    <span>Jogadores</span>
+                </a>
+
+                <a href="../consentimento/consentimento.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">📄</span>
+                    <span>Consentimentos</span>
+                </a>
+
+                <a href="../analise/escuta.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🧠</span>
+                    <span>Análises</span>
+                </a>
+
+                <a href="../gerador/gerador.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">✨</span>
+                    <span>Gerador</span>
+                </a>
+
+                <a href="../oneshot/oneshot-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🕯️</span>
+                    <span>One-Shots</span>
+                </a>
+
+                <a href="../revisao/revisao.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">✍️</span>
+                    <span>Revisão</span>
+                </a>
+
+                <a href="configuracoes.html" class="sidebar-link active">
+                    <span class="sidebar-link-icon">⚙️</span>
+                    <span>Configurações</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+
+        <!-- =============================================
+             CONTEÚDO
+             ============================================= -->
+        <main class="main-content">
+
+            <!-- =========================================
+                 TOPBAR
+                 ========================================= -->
+            <header class="topbar">
+
+                <div class="search-box">
+
+                    <span>⚙️</span>
+
+                    <input
+                        type="text"
+                        placeholder="Painel de configurações"
+                        disabled
+                    >
+
+                </div>
+
+                <div class="topbar-actions">
+
+                    <button class="btn btn-primary btn-sm">
+                        Salvar Alterações
+                    </button>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =========================================
+                 HEADER
+                 ========================================= -->
+            <section class="page-container">
+
+                <div class="page-header">
+
+                    <small>
+                        Configurações
+                    </small>
+
+                    <h2 class="page-title">
+                        Preferências do Sistema
+                    </h2>
+
+                    <p class="page-subtitle">
+                        Ajustes gerais do Story Sense RPG.
+                    </p>
+
+                </div>
+
+
+
+                <!-- =====================================
+                     CONFIGURAÇÕES
+                     ===================================== -->
+                <section class="grid grid-2">
+
+                    <!-- ================================
+                         CONTA
+                         ================================ -->
+                    <article class="card">
+
+                        <div class="card-header mb-lg">
+
+                            <h3 class="card-title">
+                                Conta
+                            </h3>
+
+                            <p class="card-subtitle">
+                                Informações do usuário principal.
+                            </p>
+
+                        </div>
+
+                        <form class="form">
+
+                            <div class="form-group">
+
+                                <label class="form-label">
+                                    Nome
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-input"
+                                    value="Regis"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label class="form-label">
+                                    E-mail
+                                </label>
+
+                                <input
+                                    type="email"
+                                    class="form-input"
+                                    value="regis@email.com"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label class="form-label">
+                                    Idioma
+                                </label>
+
+                                <select class="form-select">
+
+                                    <option selected>
+                                        Português
+                                    </option>
+
+                                    <option>
+                                        English
+                                    </option>
+
+                                    <option>
+                                        Français
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </form>
+
+                    </article>
+
+
+
+                    <!-- ================================
+                         SISTEMA
+                         ================================ -->
+                    <article class="card">
+
+                        <div class="card-header mb-lg">
+
+                            <h3 class="card-title">
+                                Sistema
+                            </h3>
+
+                            <p class="card-subtitle">
+                                Ajustes visuais e comportamentais.
+                            </p>
+
+                        </div>
+
+                        <div class="grid">
+
+                            <label class="checkbox-card">
+
+                                <input type="checkbox" checked>
+
+                                <span>
+                                    Tema escuro
+                                </span>
+
+                            </label>
+
+
+                            <label class="checkbox-card">
+
+                                <input type="checkbox" checked>
+
+                                <span>
+                                    Ativar efeitos visuais
+                                </span>
+
+                            </label>
+
+
+                            <label class="checkbox-card">
+
+                                <input type="checkbox">
+
+                                <span>
+                                    Sons da interface
+                                </span>
+
+                            </label>
+
+
+                            <label class="checkbox-card">
+
+                                <input type="checkbox" checked>
+
+                                <span>
+                                    Salvamento automático
+                                </span>
+
+                            </label>
+
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+
+                <!-- =====================================
+                     PREFERÊNCIAS
+                     ===================================== -->
+                <section class="card mt-xl">
+
+                    <div class="card-header mb-lg">
+
+                        <h3 class="card-title">
+                            Preferências Narrativas
+                        </h3>
+
+                        <p class="card-subtitle">
+                            Ajustes utilizados em geração e análises.
+                        </p>
+
+                    </div>
+
+                    <form class="form">
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label class="form-label">
+                                    Estilo Principal
+                                </label>
+
+                                <select class="form-select">
+
+                                    <option>
+                                        Horror Psicológico
+                                    </option>
+
+                                    <option>
+                                        Fantasia Sombria
+                                    </option>
+
+                                    <option>
+                                        Investigação
+                                    </option>
+
+                                    <option>
+                                        Cyberpunk
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label class="form-label">
+                                    Intensidade Narrativa
+                                </label>
+
+                                <select class="form-select">
+
+                                    <option>
+                                        Leve
+                                    </option>
+
+                                    <option selected>
+                                        Média
+                                    </option>
+
+                                    <option>
+                                        Alta
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label class="form-label">
+                                Observações
+                            </label>
+
+                            <textarea
+                                class="form-textarea"
+                                placeholder="Preferências gerais do mestre..."
+                            ></textarea>
+
+                        </div>
+
+                    </form>
+
+                </section>
+
+
+
+                <!-- =====================================
+                     PERIGO
+                     ===================================== -->
+                <section class="card mt-xl card-danger">
+
+                    <div class="card-header mb-lg">
+
+                        <h3 class="card-title">
+                            Zona de Perigo
+                        </h3>
+
+                        <p class="card-subtitle">
+                            Ações críticas do sistema.
+                        </p>
+
+                    </div>
+
+                    <div class="topbar-actions">
+
+                        <button class="btn btn-outline">
+                            Limpar Dados
+                        </button>
+
+                        <button class="btn btn-primary">
+                            Encerrar Sessão
+                        </button>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,446 @@
+<!-- ======================================================
+     pages/revisao/material-edit.html
+     ====================================================== -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Sense RPG | Editar Material</title>
+
+    <link rel="stylesheet" href="../../static/css/style.css">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <!-- =============================================
+             SIDEBAR
+             ============================================= -->
+        <aside class="sidebar">
+
+            <div class="sidebar-brand">
+
+                <div class="sidebar-logo">
+                    StorySense
+                </div>
+
+                <h1 class="sidebar-title">
+                    Story Sense
+                </h1>
+
+                <p class="sidebar-description">
+                    Painel do mestre
+                </p>
+
+            </div>
+
+            <p class="sidebar-section-title">
+                Navegação
+            </p>
+
+            <nav class="sidebar-nav">
+
+                <a href="../../dashboard.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="../mesas/mesa-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🎲</span>
+                    <span>Mesas</span>
+                </a>
+
+                <a href="../jogadores/jogador-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">👥</span>
+                    <span>Jogadores</span>
+                </a>
+
+                <a href="../consentimento/consentimento.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">📄</span>
+                    <span>Consentimentos</span>
+                </a>
+
+                <a href="../analise/escuta.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🧠</span>
+                    <span>Análises</span>
+                </a>
+
+                <a href="../gerador/gerador.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">✨</span>
+                    <span>Gerador</span>
+                </a>
+
+                <a href="../oneshot/oneshot-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🕯️</span>
+                    <span>One-Shots</span>
+                </a>
+
+                <a href="revisao.html" class="sidebar-link active">
+                    <span class="sidebar-link-icon">✍️</span>
+                    <span>Revisão</span>
+                </a>
+
+                <a href="../configuracoes/configuracoes.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">⚙️</span>
+                    <span>Configurações</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+
+        <!-- =============================================
+             CONTEÚDO
+             ============================================= -->
+        <main class="main-content">
+
+            <!-- =========================================
+                 TOPBAR
+                 ========================================= -->
+            <header class="topbar">
+
+                <div class="search-box">
+
+                    <span>✍️</span>
+
+                    <input
+                        type="text"
+                        placeholder="Modo de edição narrativa"
+                        disabled
+                    >
+
+                </div>
+
+                <div class="topbar-actions">
+
+                    <a href="revisao.html" class="btn btn-outline btn-sm">
+                        Voltar
+                    </a>
+
+                    <button class="btn btn-primary btn-sm">
+                        Salvar
+                    </button>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =========================================
+                 HEADER
+                 ========================================= -->
+            <section class="page-container">
+
+                <div class="page-header">
+
+                    <small>
+                        Revisão
+                    </small>
+
+                    <h2 class="page-title">
+                        Editar Material
+                    </h2>
+
+                    <p class="page-subtitle">
+                        Ajustes narrativos e refinamento de conteúdo.
+                    </p>
+
+                </div>
+
+
+
+                <!-- =====================================
+                     FORMULÁRIO
+                     ===================================== -->
+                <section class="card">
+
+                    <form class="form">
+
+                        <!-- =============================
+                             TÍTULO
+                             ============================= -->
+                        <div class="form-group">
+
+                            <label class="form-label">
+                                Título do Material
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-input"
+                                value="O Trem Sem Destino"
+                            >
+
+                        </div>
+
+
+
+                        <!-- =============================
+                             CATEGORIA
+                             ============================= -->
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label class="form-label">
+                                    Categoria
+                                </label>
+
+                                <select class="form-select">
+
+                                    <option selected>
+                                        Horror
+                                    </option>
+
+                                    <option>
+                                        Investigação
+                                    </option>
+
+                                    <option>
+                                        Fantasia
+                                    </option>
+
+                                    <option>
+                                        Cyberpunk
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label class="form-label">
+                                    Status
+                                </label>
+
+                                <select class="form-select">
+
+                                    <option>
+                                        Rascunho
+                                    </option>
+
+                                    <option selected>
+                                        Revisão
+                                    </option>
+
+                                    <option>
+                                        Finalizado
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- =============================
+                             RESUMO
+                             ============================= -->
+                        <div class="form-group">
+
+                            <label class="form-label">
+                                Resumo Narrativo
+                            </label>
+
+                            <textarea
+                                class="form-textarea"
+                            >Um trem abandonado reaparece durante madrugadas chuvosas. Passageiros desaparecem após embarcar e poucos retornam.</textarea>
+
+                        </div>
+
+
+
+                        <!-- =============================
+                             OBSERVAÇÕES
+                             ============================= -->
+                        <div class="form-group">
+
+                            <label class="form-label">
+                                Observações de Revisão
+                            </label>
+
+                            <textarea
+                                class="form-textarea"
+                                placeholder="Anotações internas..."
+                            >Melhorar progressão do suspense e expandir a cena final.</textarea>
+
+                        </div>
+
+
+
+                        <!-- =============================
+                             TAGS
+                             ============================= -->
+                        <div class="grid grid-4">
+
+                            <label class="checkbox-card">
+
+                                <input type="checkbox" checked>
+
+                                <span>
+                                    Horror Psicológico
+                                </span>
+
+                            </label>
+
+
+                            <label class="checkbox-card">
+
+                                <input type="checkbox" checked>
+
+                                <span>
+                                    Investigação
+                                </span>
+
+                            </label>
+
+
+                            <label class="checkbox-card">
+
+                                <input type="checkbox">
+
+                                <span>
+                                    Política
+                                </span>
+
+                            </label>
+
+
+                            <label class="checkbox-card">
+
+                                <input type="checkbox">
+
+                                <span>
+                                    Sobrevivência
+                                </span>
+
+                            </label>
+
+                        </div>
+
+
+
+                        <!-- =============================
+                             BOTOES
+                             ============================= -->
+                        <div class="topbar-actions mt-xl">
+
+                            <button
+                                type="button"
+                                class="btn btn-outline"
+                            >
+                                Salvar Rascunho
+                            </button>
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary"
+                            >
+                                Atualizar Material
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </section>
+
+
+
+                <!-- =====================================
+                     HISTÓRICO
+                     ===================================== -->
+                <section class="card mt-xl">
+
+                    <div class="card-header mb-lg">
+
+                        <h3 class="card-title">
+                            Histórico de Alterações
+                        </h3>
+
+                        <p class="card-subtitle">
+                            Últimas modificações registradas.
+                        </p>
+
+                    </div>
+
+                    <div class="timeline">
+
+                        <div class="timeline-item">
+
+                            <div class="timeline-dot"></div>
+
+                            <div class="timeline-content">
+
+                                <h4>
+                                    Revisão de Suspense
+                                </h4>
+
+                                <p>
+                                    Ajustado ritmo das descobertas narrativas.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="timeline-item">
+
+                            <div class="timeline-dot"></div>
+
+                            <div class="timeline-content">
+
+                                <h4>
+                                    Expansão de Cenário
+                                </h4>
+
+                                <p>
+                                    Novos vagões adicionados à exploração.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="timeline-item">
+
+                            <div class="timeline-dot"></div>
+
+                            <div class="timeline-content">
+
+                                <h4>
+                                    Ajuste de Clímax
+                                </h4>
+
+                                <p>
+                                    Final reorganizado para maior impacto.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
