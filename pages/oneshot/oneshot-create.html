@@ -1,0 +1,357 @@
+<!-- ======================================================
+     pages/oneshot/oneshot-create.html
+     ====================================================== -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Sense RPG | Nova One-Shot</title>
+
+    <link rel="stylesheet" href="../../static/css/style.css">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <!-- =============================================
+             SIDEBAR
+             ============================================= -->
+        <aside class="sidebar">
+
+            <div class="sidebar-brand">
+
+                <div class="sidebar-logo">
+                    SS
+                </div>
+
+                <h1 class="sidebar-title">
+                    Story Sense
+                </h1>
+
+                <p class="sidebar-description">
+                    Painel do mestre
+                </p>
+
+            </div>
+
+            <p class="sidebar-section-title">
+                Navegação
+            </p>
+
+            <nav class="sidebar-nav">
+
+                <a href="../../dashboard.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="../mesas/mesa-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🎲</span>
+                    <span>Mesas</span>
+                </a>
+
+                <a href="../jogadores/jogador-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">👥</span>
+                    <span>Jogadores</span>
+                </a>
+
+                <a href="../consentimento/consentimento.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">📄</span>
+                    <span>Consentimentos</span>
+                </a>
+
+                <a href="../analise/escuta.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🧠</span>
+                    <span>Análises</span>
+                </a>
+
+                <a href="../gerador/gerador.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">✨</span>
+                    <span>Gerador</span>
+                </a>
+
+                <a href="oneshot-list.html" class="sidebar-link active">
+                    <span class="sidebar-link-icon">🕯️</span>
+                    <span>One-Shots</span>
+                </a>
+
+                <a href="../revisao/revisao.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">✍️</span>
+                    <span>Revisão</span>
+                </a>
+
+                <a href="../configuracoes/configuracoes.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">⚙️</span>
+                    <span>Configurações</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+
+        <!-- =============================================
+             CONTEÚDO
+             ============================================= -->
+        <main class="main-content">
+
+            <!-- =========================================
+                 TOPBAR
+                 ========================================= -->
+            <header class="topbar">
+
+                <div class="search-box">
+
+                    <span>🕯️</span>
+
+                    <input
+                        type="text"
+                        placeholder="Criando nova sessão..."
+                        disabled
+                    >
+
+                </div>
+
+                <div class="topbar-actions">
+
+                    <a href="oneshot-list.html" class="btn btn-outline btn-sm">
+                        Voltar
+                    </a>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =========================================
+                 HEADER
+                 ========================================= -->
+            <section class="page-container">
+
+                <div class="page-header">
+
+                    <small>
+                        One-Shots
+                    </small>
+
+                    <h2 class="page-title">
+                        Criar Nova Sessão
+                    </h2>
+
+                    <p class="page-subtitle">
+                        Estruture sessões rápidas e campanhas curtas.
+                    </p>
+
+                </div>
+
+
+
+                <!-- =====================================
+                     FORMULÁRIO
+                     ===================================== -->
+                <section class="card">
+
+                    <form class="form">
+
+                        <!-- =============================
+                             LINHA 1
+                             ============================= -->
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label class="form-label">
+                                    Título
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-input"
+                                    placeholder="Nome da one-shot"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label class="form-label">
+                                    Categoria
+                                </label>
+
+                                <select class="form-select">
+
+                                    <option>
+                                        Horror
+                                    </option>
+
+                                    <option>
+                                        Investigação
+                                    </option>
+
+                                    <option>
+                                        Fantasia
+                                    </option>
+
+                                    <option>
+                                        Cyberpunk
+                                    </option>
+
+                                    <option>
+                                        Suspense
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- =============================
+                             LINHA 2
+                             ============================= -->
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label class="form-label">
+                                    Quantidade de Jogadores
+                                </label>
+
+                                <input
+                                    type="number"
+                                    class="form-input"
+                                    placeholder="4"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label class="form-label">
+                                    Duração Estimada
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-input"
+                                    placeholder="4 horas"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- =============================
+                             SINOPSE
+                             ============================= -->
+                        <div class="form-group">
+
+                            <label class="form-label">
+                                Sinopse
+                            </label>
+
+                            <textarea
+                                class="form-textarea"
+                                placeholder="Resumo da sessão..."
+                            ></textarea>
+
+                        </div>
+
+
+
+                        <!-- =============================
+                             ELEMENTOS
+                             ============================= -->
+                        <div class="grid">
+
+                            <label class="checkbox-card">
+
+                                <input type="checkbox">
+
+                                <span>
+                                    Horror psicológico
+                                </span>
+
+                            </label>
+
+
+                            <label class="checkbox-card">
+
+                                <input type="checkbox">
+
+                                <span>
+                                    Investigação
+                                </span>
+
+                            </label>
+
+
+                            <label class="checkbox-card">
+
+                                <input type="checkbox">
+
+                                <span>
+                                    Conflito político
+                                </span>
+
+                            </label>
+
+
+                            <label class="checkbox-card">
+
+                                <input type="checkbox">
+
+                                <span>
+                                    Combate intenso
+                                </span>
+
+                            </label>
+
+                        </div>
+
+
+
+                        <!-- =============================
+                             BOTÕES
+                             ============================= -->
+                        <div class="topbar-actions mt-xl">
+
+                            <button
+                                type="button"
+                                class="btn btn-outline"
+                            >
+                                Salvar Rascunho
+                            </button>
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary"
+                            >
+                                Criar One-Shot
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </section>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

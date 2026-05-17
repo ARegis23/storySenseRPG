@@ -1,0 +1,399 @@
+<!-- ======================================================
+     pages/oneshot/oneshot-view.html
+     ====================================================== -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Sense RPG | Visualizar One-Shot</title>
+
+    <link rel="stylesheet" href="../../static/css/style.css">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <!-- =============================================
+             SIDEBAR
+             ============================================= -->
+        <aside class="sidebar">
+
+            <div class="sidebar-brand">
+
+                <div class="sidebar-logo">
+                    SS
+                </div>
+
+                <h1 class="sidebar-title">
+                    Story Sense
+                </h1>
+
+                <p class="sidebar-description">
+                    Painel do mestre
+                </p>
+
+            </div>
+
+            <p class="sidebar-section-title">
+                Navegação
+            </p>
+
+            <nav class="sidebar-nav">
+
+                <a href="../../dashboard.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="../mesas/mesa-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🎲</span>
+                    <span>Mesas</span>
+                </a>
+
+                <a href="../jogadores/jogador-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">👥</span>
+                    <span>Jogadores</span>
+                </a>
+
+                <a href="../consentimento/consentimento.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">📄</span>
+                    <span>Consentimentos</span>
+                </a>
+
+                <a href="../analise/escuta.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🧠</span>
+                    <span>Análises</span>
+                </a>
+
+                <a href="../gerador/gerador.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">✨</span>
+                    <span>Gerador</span>
+                </a>
+
+                <a href="oneshot-list.html" class="sidebar-link active">
+                    <span class="sidebar-link-icon">🕯️</span>
+                    <span>One-Shots</span>
+                </a>
+
+                <a href="../revisao/revisao.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">✍️</span>
+                    <span>Revisão</span>
+                </a>
+
+                <a href="../configuracoes/configuracoes.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">⚙️</span>
+                    <span>Configurações</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+
+        <!-- =============================================
+             CONTEÚDO
+             ============================================= -->
+        <main class="main-content">
+
+            <!-- =========================================
+                 TOPBAR
+                 ========================================= -->
+            <header class="topbar">
+
+                <div class="search-box">
+
+                    <span>📖</span>
+
+                    <input
+                        type="text"
+                        placeholder="Visualização narrativa"
+                        disabled
+                    >
+
+                </div>
+
+                <div class="topbar-actions">
+
+                    <a href="oneshot-list.html" class="btn btn-outline btn-sm">
+                        Voltar
+                    </a>
+
+                    <a href="oneshot-create.html" class="btn btn-primary btn-sm">
+                        Editar
+                    </a>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =========================================
+                 HEADER
+                 ========================================= -->
+            <section class="page-container">
+
+                <div class="page-header">
+
+                    <small>
+                        One-Shot
+                    </small>
+
+                    <h2 class="page-title">
+                        O Trem Sem Destino
+                    </h2>
+
+                    <p class="page-subtitle">
+                        Horror investigativo em uma ferrovia esquecida.
+                    </p>
+
+                </div>
+
+
+
+                <!-- =====================================
+                     RESUMO
+                     ===================================== -->
+                <section class="grid grid-4 mb-xl">
+
+                    <article class="card card-gold">
+
+                        <p class="text-muted mb-sm">
+                            Jogadores
+                        </p>
+
+                        <h3 class="card-title">
+                            4 a 6
+                        </h3>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <p class="text-muted mb-sm">
+                            Duração
+                        </p>
+
+                        <h3 class="card-title">
+                            4h
+                        </h3>
+
+                    </article>
+
+
+                    <article class="card card-purple">
+
+                        <p class="text-muted mb-sm">
+                            Clima
+                        </p>
+
+                        <h3 class="card-title">
+                            Sombrio
+                        </h3>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <p class="text-muted mb-sm">
+                            Status
+                        </p>
+
+                        <h3 class="card-title">
+                            Publicada
+                        </h3>
+
+                    </article>
+
+                </section>
+
+
+
+                <!-- =====================================
+                     SINOPSE + ESTRUTURA
+                     ===================================== -->
+                <section class="grid grid-2">
+
+                    <!-- ================================
+                         SINOPSE
+                         ================================ -->
+                    <article class="card">
+
+                        <div class="card-header mb-lg">
+
+                            <h3 class="card-title">
+                                Sinopse
+                            </h3>
+
+                            <p class="card-subtitle">
+                                Resumo principal da sessão.
+                            </p>
+
+                        </div>
+
+                        <div class="alert">
+                            Um trem abandonado reaparece durante madrugadas chuvosas.
+                            Pessoas entram, mas poucas retornam.
+                            Os jogadores precisam descobrir o que existe além
+                            dos vagões antes que a próxima parada aconteça.
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ================================
+                         ELEMENTOS
+                         ================================ -->
+                    <article class="card">
+
+                        <div class="card-header mb-lg">
+
+                            <h3 class="card-title">
+                                Elementos Narrativos
+                            </h3>
+
+                            <p class="card-subtitle">
+                                Componentes centrais da sessão.
+                            </p>
+
+                        </div>
+
+                        <div class="grid">
+
+                            <div class="alert">
+                                🌑 Horror psicológico
+                            </div>
+
+                            <div class="alert">
+                                🧩 Investigação sobrenatural
+                            </div>
+
+                            <div class="alert">
+                                🚂 Ambiente claustrofóbico
+                            </div>
+
+                            <div class="alert">
+                                👁️ Entidade desconhecida
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+
+                <!-- =====================================
+                     ETAPAS
+                     ===================================== -->
+                <section class="card mt-xl">
+
+                    <div class="card-header mb-lg">
+
+                        <h3 class="card-title">
+                            Estrutura da Sessão
+                        </h3>
+
+                        <p class="card-subtitle">
+                            Organização narrativa da one-shot.
+                        </p>
+
+                    </div>
+
+                    <div class="timeline">
+
+                        <div class="timeline-item">
+
+                            <div class="timeline-dot"></div>
+
+                            <div class="timeline-content">
+
+                                <h4>
+                                    Introdução
+                                </h4>
+
+                                <p>
+                                    Os jogadores recebem relatos sobre o trem desaparecido.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="timeline-item">
+
+                            <div class="timeline-dot"></div>
+
+                            <div class="timeline-content">
+
+                                <h4>
+                                    Investigação
+                                </h4>
+
+                                <p>
+                                    Descoberta de passageiros antigos e documentos ocultos.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="timeline-item">
+
+                            <div class="timeline-dot"></div>
+
+                            <div class="timeline-content">
+
+                                <h4>
+                                    Clímax
+                                </h4>
+
+                                <p>
+                                    A entidade do trem revela sua verdadeira origem.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="timeline-item">
+
+                            <div class="timeline-dot"></div>
+
+                            <div class="timeline-content">
+
+                                <h4>
+                                    Final
+                                </h4>
+
+                                <p>
+                                    O trem desaparece novamente antes do amanhecer.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
