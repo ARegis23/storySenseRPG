@@ -1,0 +1,420 @@
+<!-- ======================================================
+     pages/gerador/gerador.html
+     ====================================================== -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Sense RPG | Gerador</title>
+
+    <link rel="stylesheet" href="../../static/css/style.css">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <!-- =============================================
+             SIDEBAR
+             ============================================= -->
+        <aside class="sidebar">
+
+            <div class="sidebar-brand">
+
+                <div class="sidebar-logo">
+                    SS
+                </div>
+
+                <h1 class="sidebar-title">
+                    Story Sense
+                </h1>
+
+                <p class="sidebar-description">
+                    Painel do mestre
+                </p>
+
+            </div>
+
+            <p class="sidebar-section-title">
+                Navegação
+            </p>
+
+            <nav class="sidebar-nav">
+
+                <a href="../../dashboard.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="../mesas/mesa-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🎲</span>
+                    <span>Mesas</span>
+                </a>
+
+                <a href="../jogadores/jogador-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">👥</span>
+                    <span>Jogadores</span>
+                </a>
+
+                <a href="../consentimento/consentimento.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">📄</span>
+                    <span>Consentimentos</span>
+                </a>
+
+                <a href="../analise/escuta.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🧠</span>
+                    <span>Análises</span>
+                </a>
+
+                <a href="gerador.html" class="sidebar-link active">
+                    <span class="sidebar-link-icon">✨</span>
+                    <span>Gerador</span>
+                </a>
+
+                <a href="../oneshot/oneshot-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🕯️</span>
+                    <span>One-Shots</span>
+                </a>
+
+                <a href="../revisao/revisao.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">✍️</span>
+                    <span>Revisão</span>
+                </a>
+
+                <a href="../configuracoes/configuracoes.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">⚙️</span>
+                    <span>Configurações</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+
+        <!-- =============================================
+             CONTEÚDO
+             ============================================= -->
+        <main class="main-content">
+
+            <!-- =========================================
+                 TOPBAR
+                 ========================================= -->
+            <header class="topbar">
+
+                <div class="search-box">
+
+                    <span>🔎</span>
+
+                    <input
+                        type="search"
+                        placeholder="Buscar geração..."
+                    >
+
+                </div>
+
+                <div class="topbar-actions">
+
+                    <a href="desafios.html" class="btn btn-outline btn-sm">
+                        Desafios
+                    </a>
+
+                    <a href="personagens.html" class="btn btn-outline btn-sm">
+                        Personagens
+                    </a>
+
+                    <a href="pistas.html" class="btn btn-outline btn-sm">
+                        Pistas
+                    </a>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =========================================
+                 HEADER
+                 ========================================= -->
+            <section class="page-container">
+
+                <div class="page-header">
+
+                    <small>
+                        Gerador
+                    </small>
+
+                    <h2 class="page-title">
+                        Central de Geração
+                    </h2>
+
+                    <p class="page-subtitle">
+                        Ferramentas para criação rápida de conteúdo narrativo.
+                    </p>
+
+                </div>
+
+
+
+                <!-- =====================================
+                     CARDS
+                     ===================================== -->
+                <section class="grid grid-3">
+
+                    <!-- ================================
+                         DESAFIOS
+                         ================================ -->
+                    <a href="desafios.html" class="card card-hover">
+
+                        <div class="card-header mb-lg">
+
+                            <h3 class="card-title">
+                                ⚔️ Desafios
+                            </h3>
+
+                            <p class="card-subtitle">
+                                Conflitos e eventos narrativos.
+                            </p>
+
+                        </div>
+
+                        <div class="alert">
+                            Gere missões, crises, batalhas e problemas políticos.
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- ================================
+                         PERSONAGENS
+                         ================================ -->
+                    <a href="personagens.html" class="card card-hover">
+
+                        <div class="card-header mb-lg">
+
+                            <h3 class="card-title">
+                                🎭 Personagens
+                            </h3>
+
+                            <p class="card-subtitle">
+                                NPCs e figuras importantes.
+                            </p>
+
+                        </div>
+
+                        <div class="alert">
+                            Crie aliados, antagonistas e personagens secundários.
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- ================================
+                         PISTAS
+                         ================================ -->
+                    <a href="pistas.html" class="card card-hover">
+
+                        <div class="card-header mb-lg">
+
+                            <h3 class="card-title">
+                                🧩 Pistas
+                            </h3>
+
+                            <p class="card-subtitle">
+                                Elementos investigativos.
+                            </p>
+
+                        </div>
+
+                        <div class="alert">
+                            Desenvolva documentos, objetos e segredos ocultos.
+                        </div>
+
+                    </a>
+
+                </section>
+
+
+
+                <!-- =====================================
+                     RESUMO
+                     ===================================== -->
+                <section class="grid grid-4 mt-xl">
+
+                    <article class="card card-gold">
+
+                        <p class="text-muted mb-sm">
+                            NPCs Gerados
+                        </p>
+
+                        <h3 class="card-title">
+                            38
+                        </h3>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <p class="text-muted mb-sm">
+                            Pistas Criadas
+                        </p>
+
+                        <h3 class="card-title">
+                            21
+                        </h3>
+
+                    </article>
+
+
+                    <article class="card card-purple">
+
+                        <p class="text-muted mb-sm">
+                            Desafios
+                        </p>
+
+                        <h3 class="card-title">
+                            17
+                        </h3>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <p class="text-muted mb-sm">
+                            Ideias Salvas
+                        </p>
+
+                        <h3 class="card-title">
+                            64
+                        </h3>
+
+                    </article>
+
+                </section>
+
+
+
+                <!-- =====================================
+                     ÚLTIMAS GERAÇÕES
+                     ===================================== -->
+                <section class="card mt-xl">
+
+                    <div class="card-header mb-lg">
+
+                        <h3 class="card-title">
+                            Últimas Gerações
+                        </h3>
+
+                        <p class="card-subtitle">
+                            Conteúdos recentes produzidos pelo sistema.
+                        </p>
+
+                    </div>
+
+                    <div class="table-wrapper">
+
+                        <table class="table">
+
+                            <thead>
+
+                                <tr>
+                                    <th>Conteúdo</th>
+                                    <th>Categoria</th>
+                                    <th>Tema</th>
+                                    <th>Status</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>
+                                        Trem Fantasma
+                                    </td>
+
+                                    <td>
+                                        Desafio
+                                    </td>
+
+                                    <td>
+                                        Horror
+                                    </td>
+
+                                    <td>
+                                        <span class="badge badge-success">
+                                            Gerado
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        Mirelith
+                                    </td>
+
+                                    <td>
+                                        Personagem
+                                    </td>
+
+                                    <td>
+                                        Fantasia Sombria
+                                    </td>
+
+                                    <td>
+                                        <span class="badge badge-success">
+                                            Gerado
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        Carta Queimada
+                                    </td>
+
+                                    <td>
+                                        Pista
+                                    </td>
+
+                                    <td>
+                                        Investigação
+                                    </td>
+
+                                    <td>
+                                        <span class="badge badge-warning">
+                                            Revisão
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

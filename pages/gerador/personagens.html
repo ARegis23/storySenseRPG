@@ -1,0 +1,361 @@
+<!-- ======================================================
+     pages/gerador/personagens.html
+     ====================================================== -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Sense RPG | Personagens</title>
+
+    <link rel="stylesheet" href="../../static/css/style.css">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <!-- =============================================
+             SIDEBAR
+             ============================================= -->
+        <aside class="sidebar">
+
+            <div class="sidebar-brand">
+
+                <div class="sidebar-logo">
+                    SS
+                </div>
+
+                <h1 class="sidebar-title">
+                    Story Sense
+                </h1>
+
+                <p class="sidebar-description">
+                    Painel do mestre
+                </p>
+
+            </div>
+
+            <p class="sidebar-section-title">
+                Navegação
+            </p>
+
+            <nav class="sidebar-nav">
+
+                <a href="../../dashboard.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="../mesas/mesa-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🎲</span>
+                    <span>Mesas</span>
+                </a>
+
+                <a href="../jogadores/jogador-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">👥</span>
+                    <span>Jogadores</span>
+                </a>
+
+                <a href="../consentimento/consentimento.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">📄</span>
+                    <span>Consentimentos</span>
+                </a>
+
+                <a href="../analise/escuta.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🧠</span>
+                    <span>Análises</span>
+                </a>
+
+                <a href="gerador.html" class="sidebar-link active">
+                    <span class="sidebar-link-icon">✨</span>
+                    <span>Gerador</span>
+                </a>
+
+                <a href="../oneshot/oneshot-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🕯️</span>
+                    <span>One-Shots</span>
+                </a>
+
+                <a href="../revisao/revisao.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">✍️</span>
+                    <span>Revisão</span>
+                </a>
+
+                <a href="../configuracoes/configuracoes.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">⚙️</span>
+                    <span>Configurações</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+
+        <!-- =============================================
+             CONTEÚDO
+             ============================================= -->
+        <main class="main-content">
+
+            <!-- =========================================
+                 TOPBAR
+                 ========================================= -->
+            <header class="topbar">
+
+                <div class="search-box">
+
+                    <span>🔎</span>
+
+                    <input
+                        type="search"
+                        placeholder="Buscar personagem..."
+                    >
+
+                </div>
+
+                <div class="topbar-actions">
+
+                    <a href="gerador.html" class="btn btn-outline btn-sm">
+                        Gerador
+                    </a>
+
+                    <a href="desafios.html" class="btn btn-outline btn-sm">
+                        Desafios
+                    </a>
+
+                    <a href="pistas.html" class="btn btn-outline btn-sm">
+                        Pistas
+                    </a>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =========================================
+                 HEADER
+                 ========================================= -->
+            <section class="page-container">
+
+                <div class="page-header">
+
+                    <small>
+                        Gerador
+                    </small>
+
+                    <h2 class="page-title">
+                        Personagens
+                    </h2>
+
+                    <p class="page-subtitle">
+                        NPCs e figuras importantes para campanhas e sessões.
+                    </p>
+
+                </div>
+
+
+
+                <!-- =====================================
+                     NPCS
+                     ===================================== -->
+                <section class="grid grid-2">
+
+                    <!-- ================================
+                         NPC
+                         ================================ -->
+                    <article class="card">
+
+                        <div class="card-header mb-lg">
+
+                            <h3 class="card-title">
+                                Elias Varn
+                            </h3>
+
+                            <p class="card-subtitle">
+                                Investigador aposentado
+                            </p>
+
+                        </div>
+
+                        <div class="alert mb-md">
+                            Ex-detetive conhecido por resolver crimes envolvendo cultos políticos.
+                        </div>
+
+                        <div class="grid">
+
+                            <div class="alert">
+                                🧠 Inteligência acima da média.
+                            </div>
+
+                            <div class="alert">
+                                🚬 Vício em cigarros antigos.
+                            </div>
+
+                            <div class="alert">
+                                👁️ Desconfia da própria guarda da cidade.
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ================================
+                         NPC
+                         ================================ -->
+                    <article class="card">
+
+                        <div class="card-header mb-lg">
+
+                            <h3 class="card-title">
+                                Mirelith
+                            </h3>
+
+                            <p class="card-subtitle">
+                                Alquimista clandestina
+                            </p>
+
+                        </div>
+
+                        <div class="alert mb-md">
+                            Comerciante ilegal de substâncias proibidas e relíquias esquecidas.
+                        </div>
+
+                        <div class="grid">
+
+                            <div class="alert">
+                                ⚗️ Especialista em venenos raros.
+                            </div>
+
+                            <div class="alert">
+                                🌒 Atua apenas durante a madrugada.
+                            </div>
+
+                            <div class="alert">
+                                🕯️ Mantém contato com facções ocultas.
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+
+                <!-- =====================================
+                     TABELA
+                     ===================================== -->
+                <section class="card mt-xl">
+
+                    <div class="card-header mb-lg">
+
+                        <h3 class="card-title">
+                            Banco de NPCs
+                        </h3>
+
+                        <p class="card-subtitle">
+                            Personagens separados por função narrativa.
+                        </p>
+
+                    </div>
+
+                    <div class="table-wrapper">
+
+                        <table class="table">
+
+                            <thead>
+
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Função</th>
+                                    <th>Facção</th>
+                                    <th>Clima</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>
+                                        Kael Draven
+                                    </td>
+
+                                    <td>
+                                        Mercenário
+                                    </td>
+
+                                    <td>
+                                        Ferro Negro
+                                    </td>
+
+                                    <td>
+                                        Violento
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        Seraphine
+                                    </td>
+
+                                    <td>
+                                        Diplomata
+                                    </td>
+
+                                    <td>
+                                        Conselho Real
+                                    </td>
+
+                                    <td>
+                                        Político
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        Irmão Lucien
+                                    </td>
+
+                                    <td>
+                                        Sacerdote
+                                    </td>
+
+                                    <td>
+                                        Igreja Solar
+                                    </td>
+
+                                    <td>
+                                        Misterioso
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
