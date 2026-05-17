@@ -1,0 +1,377 @@
+<!-- ======================================================
+     dashboard.html
+     ====================================================== -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Sense RPG | Dashboard</title>
+
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <!-- =============================================
+             SIDEBAR
+             ============================================= -->
+        <aside class="sidebar">
+
+            <div class="sidebar-brand">
+                <div class="sidebar-logo">
+                    SS
+                </div>
+
+                <h1 class="sidebar-title">
+                    Story Sense
+                </h1>
+
+                <p class="sidebar-description">
+                    Painel do mestre
+                </p>
+            </div>
+
+            <p class="sidebar-section-title">
+                Navegação
+            </p>
+
+            <nav class="sidebar-nav">
+
+                <a href="dashboard.html" class="sidebar-link active">
+                    <span class="sidebar-link-icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="pages/mesas/mesa-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🎲</span>
+                    <span>Mesas</span>
+                </a>
+
+                <a href="pages/jogadores/jogador-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">👥</span>
+                    <span>Jogadores</span>
+                </a>
+
+                <a href="pages/consentimento/consentimento.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">📄</span>
+                    <span>Consentimentos</span>
+                </a>
+
+                <a href="pages/analise/escuta.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🧠</span>
+                    <span>Análises</span>
+                </a>
+
+                <a href="pages/gerador/gerador.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">✨</span>
+                    <span>Gerador</span>
+                </a>
+
+                <a href="pages/oneshot/oneshot-list.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">🕯️</span>
+                    <span>One-Shots</span>
+                </a>
+
+                <a href="pages/revisao/revisao.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">✍️</span>
+                    <span>Revisão</span>
+                </a>
+
+                <a href="pages/configuracoes/configuracoes.html" class="sidebar-link">
+                    <span class="sidebar-link-icon">⚙️</span>
+                    <span>Configurações</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- =============================================
+             CONTEÚDO
+             ============================================= -->
+        <main class="main-content">
+
+            <!-- =========================================
+                 TOPBAR
+                 ========================================= -->
+            <header class="topbar">
+
+                <div class="search-box">
+                    <span>🔎</span>
+
+                    <input
+                        type="search"
+                        placeholder="Buscar..."
+                    >
+                </div>
+
+                <div class="topbar-actions">
+
+                    <span class="badge badge-success">
+                        Online
+                    </span>
+
+                    <a href="login.html" class="btn btn-outline btn-sm">
+                        Sair
+                    </a>
+
+                </div>
+
+            </header>
+
+
+            <!-- =========================================
+                 HEADER DA PÁGINA
+                 ========================================= -->
+            <section class="page-container">
+
+                <div class="page-header">
+
+                    <small>
+                        Dashboard
+                    </small>
+
+                    <h2 class="page-title">
+                        Painel Principal
+                    </h2>
+
+                    <p class="page-subtitle">
+                        Visualize mesas, jogadores e conteúdos recentes.
+                    </p>
+
+                </div>
+
+
+                <!-- =====================================
+                     CARDS DE RESUMO
+                     ===================================== -->
+                <section class="grid grid-4 mb-xl">
+
+                    <article class="card card-gold">
+
+                        <p class="text-muted mb-sm">
+                            Mesas Ativas
+                        </p>
+
+                        <h3 class="page-title">
+                            08
+                        </h3>
+
+                    </article>
+
+
+                    <article class="card card-purple">
+
+                        <p class="text-muted mb-sm">
+                            Jogadores
+                        </p>
+
+                        <h3 class="page-title">
+                            27
+                        </h3>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <p class="text-muted mb-sm">
+                            One-Shots
+                        </p>
+
+                        <h3 class="page-title">
+                            14
+                        </h3>
+
+                    </article>
+
+
+                    <article class="card card-danger">
+
+                        <p class="text-muted mb-sm">
+                            Revisões Pendentes
+                        </p>
+
+                        <h3 class="page-title">
+                            03
+                        </h3>
+
+                    </article>
+
+                </section>
+
+
+                <!-- =====================================
+                     ÁREA PRINCIPAL
+                     ===================================== -->
+                <section class="grid grid-2">
+
+                    <!-- =================================
+                         ÚLTIMAS MESAS
+                         ================================= -->
+                    <article class="card">
+
+                        <div class="card-header mb-lg">
+
+                            <h3 class="card-title">
+                                Últimas Mesas
+                            </h3>
+
+                            <p class="card-subtitle">
+                                Mesas cadastradas recentemente.
+                            </p>
+
+                        </div>
+
+                        <div class="table-wrapper">
+
+                            <table class="table">
+
+                                <thead>
+                                    <tr>
+                                        <th>Mesa</th>
+                                        <th>Sistema</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+                                        <td>Os Ecos de Valdora</td>
+                                        <td>D&D 5e</td>
+                                        <td>
+                                            <span class="badge badge-success">
+                                                Ativa
+                                            </span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Neon Abyss</td>
+                                        <td>Cyberpunk</td>
+                                        <td>
+                                            <span class="badge badge-info">
+                                                Em preparação
+                                            </span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>A Última Vigília</td>
+                                        <td>Call of Cthulhu</td>
+                                        <td>
+                                            <span class="badge badge-warning">
+                                                Revisão
+                                            </span>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =================================
+                         ATIVIDADE RECENTE
+                         ================================= -->
+                    <article class="card">
+
+                        <div class="card-header mb-lg">
+
+                            <h3 class="card-title">
+                                Atividade Recente
+                            </h3>
+
+                            <p class="card-subtitle">
+                                Últimas ações realizadas.
+                            </p>
+
+                        </div>
+
+                        <div class="grid">
+
+                            <div class="alert">
+                                Nova mesa criada:
+                                <strong>Os Ecos de Valdora</strong>
+                            </div>
+
+                            <div class="alert">
+                                Perfil narrativo atualizado para
+                                <strong>3 jogadores</strong>
+                            </div>
+
+                            <div class="alert">
+                                One-shot
+                                <strong>“A Casa da Névoa”</strong>
+                                gerada
+                            </div>
+
+                            <div class="alert">
+                                Revisão pendente em
+                                <strong>02 conteúdos</strong>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+                <!-- =====================================
+                     AÇÕES RÁPIDAS
+                     ===================================== -->
+                <section class="card mt-xl">
+
+                    <div class="card-header mb-lg">
+
+                        <h3 class="card-title">
+                            Ações rápidas
+                        </h3>
+
+                        <p class="card-subtitle">
+                            Atalhos para as principais áreas da aplicação.
+                        </p>
+
+                    </div>
+
+                    <div class="grid grid-4">
+
+                        <a href="pages/mesas/mesa-add.html" class="btn btn-primary">
+                            Nova Mesa
+                        </a>
+
+                        <a href="pages/jogadores/jogador-add.html" class="btn btn-secondary">
+                            Novo Jogador
+                        </a>
+
+                        <a href="pages/gerador/gerador.html" class="btn btn-outline">
+                            Abrir Gerador
+                        </a>
+
+                        <a href="pages/oneshot/oneshot-add.html" class="btn btn-outline">
+                            Criar One-Shot
+                        </a>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
